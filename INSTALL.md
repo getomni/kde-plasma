@@ -33,3 +33,8 @@ Download using the [GitHub .zip download](https://github.com/getomni/kde-plasma/
 
 8. Go to _System Settings > Colors_
 9. Select the _Omni_ color scheme
+
+#### Uninstall theme
+To uninstall we just use the script `./install.sh` with the `-u` option to delete the theme. Example:
+
+    $ ./install.sh -u
