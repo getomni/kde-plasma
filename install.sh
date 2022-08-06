@@ -29,16 +29,17 @@ fi
 case $1 in
 -u)
     # Uninstall option 
-    echo ''; echo -e "\e[1;32mInstall Omni for KDE Plasma...\e[0m"; sleep 2s
+    echo -e "\e[1;32mInstall Omni for KDE Plasma...\e[0m"; sleep 2s
     echo "Removing Omni.colors..."
-    rm -r $HOME/.local/share/color-schemes
+    rm $HOME/.local/share/color-schemes/Omni.colors
     echo "Removed successfully!"
     ;;
 *)
     # Install option 
-    echo ''; echo -e "\e[1;32mInstall Omni for KDE Plasma\e[0m"; sleep 2s
+    echo -e "\e[1;32mInstall Omni for KDE Plasma...\e[0m"; sleep 2s
     echo "Cloning Omni.colors..."
     cp Omni.colors $HOME/.local/share/color-schemes; sleep 2s
-    echo "Process completed successfully! :)" sleep 2s
-    echo "Guide to activate the theme in the system settings: https://github.com/getomni/kde-plasma/blob/main/INSTALL.md"
+    echo "Process completed successfully! :)"; sleep 2s
+    echo "Guide to activate the theme in the system settings:" 
+    echo "https://github.com/getomni/kde-plasma/blob/main/INSTALL.md"
 esac
