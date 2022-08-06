@@ -29,7 +29,7 @@ fi
 case $1 in
 -u)
     # Uninstall option 
-    echo -e "\e[1;32mInstall Omni for KDE Plasma...\e[0m"; sleep 2s
+    echo -e "\e[1;32mUninstall Omni for KDE Plasma...\e[0m"; sleep 2s
     echo "Removing Omni.colors..."
     rm $HOME/.local/share/color-schemes/Omni.colors
     echo "Removed successfully!"
